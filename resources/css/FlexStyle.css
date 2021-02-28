@@ -1,0 +1,246 @@
+/*
+Author: Daniel E. Rafalano
+Date: 02/26/2021
+Description: Mock of Medscape (flexbox and responsive)
+*/
+
+/* Gobal reset settings */
+*  { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+}
+
+@font-face {
+    font-family: ProximaNova-Regular;
+    src:url("../fonts/ProximaNova-Regular.otf")
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: ProximaNova-Regular, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background: linear-gradient(#007cb0, #fff);
+}
+
+h1{
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.responsive{
+    margin-top: 71px;
+    width: 100%;
+    min-width: 321px;
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+/* ------------------------------------------------- */
+
+
+/* Navigation Section */
+  header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 69px;
+    background-color: #dae0e7;
+    border-bottom: 1px solid #000;
+    align-items: center;
+  }
+  
+  header img {
+    height: 50px;
+    padding-left: 10px;
+  }
+
+  nav {
+    text-align: right;
+    flex-grow: 1;
+  }
+  
+  nav span {
+    display: inline-block;
+    padding: 20px 10px;
+  }
+
+  span a {
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  span a:hover{
+    background-color: #fff;
+    color: #007cb0;
+  }
+/* ------------------------------------------------- */
+
+
+/* Main section*/
+
+.main{
+    padding-top: 69px;
+    opacity: 0.9;
+    width: 1200px;
+    margin: auto;
+}
+/* ------------------------------------------------- */
+
+
+/* News section*/
+.spacer{
+    max-width: 1200px;
+    margin: auto;
+}
+.news{
+    display: flex;
+}
+#nowrap {
+    flex-wrap:nowrap;
+}
+.news-item{
+    background-color: #fff;
+    width: 300px;
+    border: 1px dotted #989898;
+    min-height: 300px;
+}
+.news-item h2{
+    padding-top: 15px;
+    font-size: 0.9rem;
+    background-color: #007cb0;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+}
+.news-item p{
+    margin: 10px 20px;
+}
+/* ------------------------------------------------- */
+
+/* Footer Section*/
+.findus {
+    margin-bottom: 10px;
+    color: #606060;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.social{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+}
+.social ul {
+    list-style-type:none;
+}
+.social li{
+    width: 34px;
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+.social img {
+    margin-right: 200px;
+}
+.footernav{
+    color:#007cb0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 10px;  
+}
+.footer{
+    margin-top: 20px;
+}
+.footer hr {
+    border-bottom: 1px dotted #989898;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.footernav ul {
+    list-style-type:none;
+}
+.footernav a{
+    color:#007cb0;
+}
+.footernav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+.footer li {
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+.fake{
+    font-weight: bold;
+}
+
+/* Responsive section */
+@media only screen and (min-width: 150px) and (max-width:600px) {
+    html, body{
+        font-size: 22px;
+    }header {
+        width: 100%;
+        position:fixed;
+        height: 20%;
+        background-color: #dae0e7;
+        align-items: center;
+      }
+        header img {
+            justify-content: center;
+
+  }
+    .flex-container{
+        display:block;
+        justify-content: left;
+        flex-wrap: nowrap;
+    }
+    .responsive{
+        margin-top: 50%;
+        position:relative;
+        width: 150%;
+        min-width: 50px;
+        height: 100%;
+    }
+    span{
+        border-bottom: 1px dotted #000;
+    }
+    nav {
+        text-align:center;
+      }
+      
+      nav span {
+        width: 100%;
+        display: block;
+        padding: 5px 10px;
+      }
+}
+@media screen and (max-width: 800px){
+    .news{
+        display: block;
+    }
+    .news-item{
+        width: 600px;;
+    }
+    .news-item h2 p{
+        font-size: 4rem;
+    }
+    
+}
+/* ------------------------------------------------- */
+
