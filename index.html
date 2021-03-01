@@ -4,29 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Link rel="stylesheet" href="resources/css/Style.css">
+    <Link rel="stylesheet" href="resources/css/FlexStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="/resources/js/burgermenu.js"></script>
-    <title>Responsive Menu</title>
+    <script type="text/javascript" src="resources/js/hamburger.js"></script>       
+    <title>Fake Medscape</title>
 </head>
 <body>
-    <header>
-        <nav class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="#javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>            
-        </nav>
-    </header>
-    <section>
-        <article>
-            <h1>Responsive menu</h1>
-            <p>Resize the browser window to see how it works.</p>
-        </article>
-    </section>
 
+        <header class="flex-container">
+            <img src="resources/images/mscp-logo.png" alt="">
+            <div class="topnav" id="myTopnav">
+                    <a id="home" href="#Covid" class="active">COVID-19</a>
+                    <a href="#Cardiology">Cardiology</a>
+                    <a href="#diabetes">diabetes & endocronology</a>
+                    <a href="#family">family medicine</a>
+                    <span id="inner" ><a href="javascriot:void(0);" class="icon" onclick="hamburger()"></a>
+                        <i class="fa fa-bars"></i></span>
+                </div>
+        </header>
+        <main>
+            <figure>
+                <img class="responsive2" src="resources/images/slide.PNG" alt="Your one-stop resource for medical news button">
+            </figure>
+            <section class="spacer">
+            <h1>latest news</h1>
+            <div class="news" id="nowrap">
+                <article class="news-item">
+                    <h2>White House: COVID-19</h2>
+                    <p>Feb. 26, 2021 — After several weeks of declining, COVID-19 numbers are back on 
+                        the rise and new variants continue to emerge, according to White House officials — 
+                        just as states begin to lift restrictions and open doors to restaurants and businesses.</p>
+                </article>
+                <article class="news-item">
+                        <h2>No Vascular Benefit of Testosterone</h2>
+                        <p>February 24, 2021 - Exercise training — but not testosterone therapy — improved vascular health in aging 
+                            men with widening midsections and low to normal testosterone, new research suggests.</p>
+                    </article>
+                    <article class="news-item">
+                        <h2>High Glucose in Kids With Type 1 Diabetes</h2>
+                        <p>February 24, 2021 - Type 1 diabetes appears to affect cognitive development in young 
+                            children, with adverse effects persisting over time, and with strong associations 
+                            with long- and short-term hyperglycemia, a new longitudinal study shows.</p>
+                    </article>
+                    <article class="news-item">
+                        <h2>Missed Visits During Pandemic</h2>
+                        <p>February 25, 2021 - More than one third of adults aged 18-64 years in the United States 
+                            delayed or went without medical care because of efforts by patients or providers to reduce 
+                            the spread of COVID-19, according to a new report from the Urban Institute.</p>
+                    </article>
+                </div>                  
+            </section>
+        </main>
+        <footer class="footer">
+            <hr>
+            <p class="findus">find us on</p>            
+            <div class="social">
+                <ul>
+                    <li><a href="#Facebook"><img src="resources/images/fb.png" alt="visit our Facebook page"></a></li>
+                    <li><a href="#Twitter"><img src="resources/images/twitter.png" alt="visit our Twitter page"></a></li>
+                    <li><a href="#LinkedIn"><img src="resources/images/linkedIn.png" alt="Visit our LinkedIn page"></a></li>
+                    <li><a href="#YouTube"><img src="resources/images/YouTube.png" alt="Visit our YouTube channel"></a></li>
+                    <li><a href="#Instagram"><img src="resources/images/Instagram.png" alt="Visit our Instagram page"></a></li>
+                </ul>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="#privacy">Privacy</a></li>
+                    <li><a href="#sitemap">Sitemap</a></li>
+                    <li><p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> <span class="fake">Fake Medscape</span> - All Rights Reserved</p></li>
+                </ul>
+            </div>                 
+        </footer>
 </body>
 </html>
