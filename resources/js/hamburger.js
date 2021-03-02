@@ -1,11 +1,10 @@
 function hamburger() {
-  var x = document.getElementById("myTopnav");
-  var y = document.getElementById("home");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-    y.style.display ="block";
+    "use strict";
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
 
-  } else {
-    x.className = "topnav";
-  }
+    } else {
+        x.className = "topnav";
+    }
 }
